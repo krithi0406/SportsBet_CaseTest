@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5556490900,
+  "duration": 6012872975,
   "status": "passed"
 });
 formatter.scenario({
@@ -50,28 +50,28 @@ formatter.match({
       "offset": 39
     }
   ],
-  "location": "sportsbet_home.userOpensTheWebsiteIn(String,int)"
+  "location": "sportsbet_home.userOpTheWebsiteIn(String,int)"
 });
 formatter.result({
-  "duration": 18402995096,
+  "duration": 5649157042,
   "status": "passed"
 });
 formatter.match({
   "location": "sportsbet_home.userChecksTheNextRaceTimeRemianingToBet()"
 });
 formatter.result({
-  "duration": 576160014,
+  "duration": 375460034,
   "status": "passed"
 });
 formatter.match({
   "location": "sportsbet_home.userStartsToBetOnTheNextRace()"
 });
 formatter.result({
-  "duration": 297212076,
+  "duration": 11871684421,
   "status": "passed"
 });
 formatter.after({
-  "duration": 304454580,
+  "duration": 294020847,
   "status": "passed"
 });
 });

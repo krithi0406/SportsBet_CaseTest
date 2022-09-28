@@ -38,7 +38,7 @@ public static WebDriver driver;
     }
 
 
-    public void waitElement(WebElement element, TimeOut timeOut) {
+    public static void waitElement(WebElement element, TimeOut timeOut) {
 
         try {
             WebDriverWait wait = new WebDriverWait(driver, timeOut.value);
@@ -49,7 +49,8 @@ public static WebDriver driver;
 
     }
 
-    public void findElementClick(String path, Pather type) {
+
+    public static void findElementClick(String path, Pather type) {
         try {
             WebDriverWait wait = new WebDriverWait(driver, TimeOut.MIDDLE.value);
             switch (type) {
@@ -160,11 +161,11 @@ public static WebDriver driver;
 
 
 
-    public void navigateToUrl(String url) {
+    public static void navigateToUrl(String url) {
         driver.get(url);
     }
 
-    public void changeScreenDimension(int width) {
+    public static void changeScreenDimension(int width) {
         Dimension dimension = new Dimension(width, 720);
         driver.manage().window().setSize(dimension);
     }
