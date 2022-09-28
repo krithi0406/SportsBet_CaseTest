@@ -14,12 +14,12 @@ public class sportsbet_homePage_actions extends common_actions {
     public static WebElement raceTitle_BettingScreen;
     public static WebElement select_Favorite;
     public static WebElement select_AnyOther;
-    public  static WebElement hide_BetSlipIcon;
+    public static WebElement hide_BetSlipIcon;
 
     public static WebElement fav_RunnerName;
-public static WebElement other_RunnerName;
-public static WebElement btn_Betslip;
-public static WebElement betSlip_Content;
+    public static WebElement other_RunnerName;
+    public static WebElement btn_Betslip;
+    public static WebElement betSlip_Content;
 
 
     public static void open_Website(String url, int width) {

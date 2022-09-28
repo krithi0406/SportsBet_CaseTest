@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="24.203195">
-<testcase classname="Bet on top two runners and validate" name="User bets twice on the top runner in the race" time="24.203195">
-<system-out><![CDATA[Given User opens the "Sportsbet" website in "420" px width..................passed
-And User checks the next race time remaining to bet.........................passed
-When User starts to bet on the next race....................................passed
-]]></system-out>
-</testcase>
-</testsuite>
