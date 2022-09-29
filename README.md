@@ -4,8 +4,7 @@ This project includes cucumber BDD Test for Case Scenario for testing in Sportsb
 Test scenarios are described in the feature files located here src/test/java/Features
 
 
-
-Installation
+**Installation**
 You need to have Java 8 JDK installed along with maven.
 
 To run the tests locally with Chrome, install ChromeDriver from here, add its location to your system PATH and add webdriver.chrome.driver=path/to/the/driver to your local variables.
@@ -14,9 +13,12 @@ To run the tests locally with Firefox, install GeckoDriver from here and add its
 
 To install all dependencies, run
 
-$ mvn clean install
-Running tests
-$ mvn test   or right click on the TestRunner file and select Run Test Runner
+_$ mvn clean install_
+
+**Running tests**
+
+_$ mvn test_ or right click on the TestRunner file and select Run Test Runner
+
 By default, tests will run on Chrome. To change that, specify -Dbrowser={browser} where {browser} is either chrome or firefox. If you haven't added the chrome driver path to your local variables, you can add it directly in the run command with the option -Dwebdriver.chrome.driver=path/to/the/driver.
 
 You can also select specific scenarios to execute using -Dcucumber.options="--tags @your_tag". More info about tags and how to combine them here.
@@ -40,7 +42,7 @@ Automation Journey
 
 
 
-Assumptions:
+**Assumptions:**
 
 Framework Use:
 
@@ -58,7 +60,7 @@ Functionality to Case Test
 
 
 
-Challenges :
+**Challenges :**
 
 1. Selecting the First displayed Race - Its risky as race with very few secs left to bet might go into Live before we complete the bet and test will fail
 2. Some races have only Win option and no place option ( few races that happen overseas , very early AEST morning time)
@@ -69,7 +71,7 @@ Challenges :
 7. Had to use multiple relative Xpaths
 
 
-Other possible problems :
+**Other possible problems :**
 
 1. Highly dynamic website , so chances that we would have to refactor bit of code and have constant maintenance effort
 2. Chances of getting False positives and false negatives
@@ -80,7 +82,7 @@ Other possible problems :
 7. Parallel execution might be an issue with same user sessions as betslip will get added with new bets each time and tests checking betslips counts might start failing
 
 
-Improvement Areas
+**Improvement Areas**
 1. Include API Tests if possible , can add Rest Assured dependencies to the framework and tests rest apis
 2. Discuss with Devs to see if they can include ID to the DOM elements
 3. Use multi users for tests running in parallel
