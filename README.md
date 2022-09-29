@@ -15,8 +15,13 @@ To run the tests locally with Firefox, install GeckoDriver from here and add its
 To install all dependencies, run
 
 $ mvn clean install
+
+
 Running tests
+
 $ mvn test   or right click on the TestRunner file and select Run Test Runner
+
+
 By default, tests will run on Chrome. To change that, specify -Dbrowser={browser} where {browser} is either chrome or firefox. If you haven't added the chrome driver path to your local variables, you can add it directly in the run command with the option -Dwebdriver.chrome.driver=path/to/the/driver.
 
 You can also select specific scenarios to execute using -Dcucumber.options="--tags @your_tag". More info about tags and how to combine them here.
