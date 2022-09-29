@@ -1,10 +1,12 @@
-# Selenium Project With Cucumber
+# Sportsbet Case Test With Cucumber
+
 This project includes cucumber BDD Test for Case Scenario for testing in Sportsbet Mobile view
 
 Test scenarios are described in the feature files located here src/test/java/Features
 
 
-**Installation**
+## **Installation**
+
 You need to have Java 8 JDK installed along with maven.
 
 To run the tests locally with Chrome, install ChromeDriver from here, add its location to your system PATH and add webdriver.chrome.driver=path/to/the/driver to your local variables.
@@ -13,11 +15,17 @@ To run the tests locally with Firefox, install GeckoDriver from here and add its
 
 To install all dependencies, run
 
+
 _$ mvn clean install_
 
 **Running tests**
 
-_$ mvn test_ or right click on the TestRunner file and select Run Test Runner
+
+
+
+_$ mvn test_   or right click on the TestRunner file and select Run Test Runner
+
+
 
 By default, tests will run on Chrome. To change that, specify -Dbrowser={browser} where {browser} is either chrome or firefox. If you haven't added the chrome driver path to your local variables, you can add it directly in the run command with the option -Dwebdriver.chrome.driver=path/to/the/driver.
 
@@ -27,7 +35,7 @@ You can also select specific scenarios to execute using -Dcucumber.options="--ta
 
 
 
-Automation Journey
+## Automation Journey
 
 
 
