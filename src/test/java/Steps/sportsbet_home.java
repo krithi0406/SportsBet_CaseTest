@@ -19,6 +19,7 @@ public class sportsbet_home extends common_actions {
         {
             website="https://sportsbet.com.au";
         }
+
         open_Website(website,width);
     }
 
@@ -28,9 +29,9 @@ public class sportsbet_home extends common_actions {
 
    }
 
-    @When("^User starts to bet on the next race$")
-    public void userStartsToBetOnTheNextRace() throws InterruptedException {
-        sportsbet_homePage_actions.start_Bet();
+    @When("^User starts to bet on \"([^\"]*)\" runner for the next race$")
+    public void userStartsToBetOnTheNextRace(String runnerType) throws InterruptedException {
+        sportsbet_homePage_actions.start_Bet(runnerType);
 
 
     }

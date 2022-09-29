@@ -48,6 +48,19 @@ public static WebDriver driver;
         }
 
     }
+    public static WebElement selectOtherRunner(String search)
+
+    {
+        return driver.findElement(By.xpath("(//div[@data-automation-id=\"racecard-outcome-name\"]//SPAN[contains(@class,'Endeavour')][not(contains(text(),'"+search+"'))]/../../..//div[contains(@class,'priceButtonContentSingleLine')])[1]"));
+    }
+    public static WebElement otherRunnerName(String search)
+
+    {
+        return driver.findElement(By.xpath("(//div[@data-automation-id=\"racecard-outcome-name\"]//SPAN[contains(@class,'Endeavour')][not(contains(text(),'"+search+"'))])[1]"));
+    }
+
+
+
 
 
     public static void findElementClick(String path, Pather type) {
@@ -174,4 +187,5 @@ public static WebDriver driver;
         driver.getTitle();
         return null;
     }
+
 }
