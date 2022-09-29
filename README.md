@@ -1,4 +1,5 @@
-# Selenium Project With Cucumber
+# Sportsbet Case Test With Cucumber
+
 This project includes cucumber BDD Test for Case Scenario for testing in Sportsbet Mobile view
 
 Test scenarios are described in the feature files located here src/test/java/Features
